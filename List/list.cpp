@@ -17,6 +17,10 @@ List::List()
 	count = 0;
 }
 
+List::~List()
+{
+}
+
 void List::add(const Item& element)
 {
 	list[count++] = element;

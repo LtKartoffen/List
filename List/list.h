@@ -12,8 +12,8 @@ private:
 	Item list[MAX];
 public:
 	//create empty list
-	List();						
-	//~List();
+	List();	
+	~List();					//destructor
 	bool is_empty() const;
 	bool is_full() const;
 	void add(const Item& element);
