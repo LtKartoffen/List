@@ -15,6 +15,8 @@ int main()
 		cout << "a) Show List\tb)Add to List\n"
 			<< "c)Learn the 10 part of all List\nq)Quit from program\n";
 		cout << "Input:";
+		//while (std::cin.get() != '\n')
+		//	continue;
 		std::cin.get(ch);
 		switch (ch)
 		{
@@ -51,9 +53,7 @@ int main()
 		default:
 			break;
 		}
-		while (std::cin.get() != '\n')
-			continue;
-	} while (ch != 'q' || ch != 'Q');
+	} while (ch != 'q' and ch != 'Q');
 
 	cout << "Bye! Thx for testing!" << std::endl;
 
